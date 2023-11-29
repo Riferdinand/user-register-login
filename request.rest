@@ -1,0 +1,28 @@
+GET  http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJLaW5nIE9pciIsImVtYWlsIjoic3VwZXJvaXI4ODFAZ21haWwuY29tIiwiaWF0IjoxNzAxMjMyNjA5LCJleHAiOjE3MDEyMzI2MjR9.R6inQ_5ogK7lhcfoARDpOreHTrgQlnYq2cmG5ovtp-Q
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Kdimas Anjay",
+    "email": "dimasanjay@gmail.com",
+    "password": "123",
+    "confPassword": "123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "superoir881@gmail.com",
+    "password": "12345"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
